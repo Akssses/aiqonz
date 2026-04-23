@@ -1,0 +1,87 @@
+@use "../../../styles/variables" as *;
+@use "../../../styles/mixins" as *;
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid transparent;
+  border-radius: $radius-md;
+  font-family: inherit;
+  font-weight: $font-weight-medium;
+  white-space: nowrap;
+  cursor: pointer;
+  text-decoration: none;
+  transition:
+    background $transition-base,
+    border-color $transition-base,
+    color $transition-base,
+    opacity $transition-base,
+    box-shadow $transition-base;
+
+  &:disabled {
+    opacity: 0.4;
+    pointer-events: none;
+  }
+}
+
+// ─── Variants ─────────────────────────────────────────────────────────────────
+
+.primary {
+  background: $color-near-black;
+  color: $color-white;
+  border-color: transparent;
+  box-shadow:
+    0 0 16px rgba(0, 0, 0, 0.25),
+    0 0 32px rgba(0, 0, 0, 0.1);
+
+  @include hover {
+    background: $color-btn-primary-hover-light;
+  }
+}
+
+.secondary {
+  background: #fff;
+  color: $color-text-primary-light;
+  border-color: #d4d4d4;
+  box-shadow:
+    0 0 12px rgba(0, 0, 0, 0.06),
+    0 0 24px rgba(0, 0, 0, 0.03);
+
+  @include hover {
+    background: #f5f5f5;
+    border-color: #c0c0c0;
+  }
+}
+
+.ghost {
+  background: transparent;
+  color: $color-text-secondary-light;
+  border-color: transparent;
+
+  @include hover {
+    color: $color-text-primary-light;
+    background: #f5f5f5;
+  }
+}
+
+// ─── Sizes ────────────────────────────────────────────────────────────────────
+
+.sm {
+  height: 32px;
+  padding: 0 14px;
+  font-size: 13px;
+}
+
+.md {
+  height: 40px;
+  padding: 0 20px;
+  font-size: 14px;
+}
+
+.lg {
+  height: 48px;
+  padding: 0 24px;
+  font-size: 14px;
+}

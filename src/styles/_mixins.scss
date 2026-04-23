@@ -1,0 +1,66 @@
+@use 'variables' as *;
+
+// ─── Breakpoints ──────────────────────────────────────────────────────────────
+
+@mixin respond-to($bp) {
+  @if $bp == xs    { @media (max-width: #{$breakpoint-xs})  { @content; } }
+  @else if $bp == sm { @media (max-width: #{$breakpoint-sm}) { @content; } }
+  @else if $bp == md { @media (max-width: #{$breakpoint-md}) { @content; } }
+  @else if $bp == lg { @media (max-width: #{$breakpoint-lg}) { @content; } }
+  @else if $bp == xl { @media (max-width: #{$breakpoint-xl}) { @content; } }
+}
+
+@mixin respond-from($bp) {
+  @if $bp == xs    { @media (min-width: #{$breakpoint-xs})  { @content; } }
+  @else if $bp == sm { @media (min-width: #{$breakpoint-sm}) { @content; } }
+  @else if $bp == md { @media (min-width: #{$breakpoint-md}) { @content; } }
+  @else if $bp == lg { @media (min-width: #{$breakpoint-lg}) { @content; } }
+  @else if $bp == xl { @media (min-width: #{$breakpoint-xl}) { @content; } }
+}
+
+// ─── Flex ─────────────────────────────────────────────────────────────────────
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// ─── Typography ───────────────────────────────────────────────────────────────
+
+@mixin text-balance {
+  text-wrap: balance;
+}
+
+// ─── Interactions ─────────────────────────────────────────────────────────────
+
+// Enable hover only on non-touch devices
+@mixin hover {
+  @media (hover: hover) and (pointer: fine) {
+    &:hover { @content; }
+  }
+}
+
+// ─── Dark mode ────────────────────────────────────────────────────────────────
+
+@mixin dark {
+  @media (prefers-color-scheme: dark) { @content; }
+}
+
+// ─── Smoothing ────────────────────────────────────────────────────────────────
+
+@mixin font-smooth {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

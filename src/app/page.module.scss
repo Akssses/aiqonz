@@ -1,0 +1,39 @@
+@use "../styles/variables" as *;
+
+.heroBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 900px;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.heroBgVideo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heroBgOverlay {
+  position: absolute;
+  inset: 0;
+}
+
+.sections {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+
+  @media (max-width: 768px) {
+    gap: 80px;
+  }
+
+  @media (max-width: 600px) {
+    gap: 60px;
+  }
+}

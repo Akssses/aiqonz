@@ -1,0 +1,195 @@
+@use "../../../styles/variables" as *;
+@use "../../../styles/mixins" as *;
+
+.section {
+  width: 100%;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 32px;
+  background: #141414;
+  box-shadow:
+    0 4px 24px rgb(0 0 0 / 0.2),
+    0 24px 64px rgb(0 0 0 / 0.28);
+}
+
+.glow {
+  position: absolute;
+  left: 50%;
+  bottom: -80px;
+  width: 110%;
+  height: 280px;
+  transform: translateX(-50%);
+  background: radial-gradient(
+    ellipse at center,
+    rgba(37, 99, 235, 0.35) 0%,
+    rgba(37, 99, 235, 0.12) 45%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+
+  @include respond-to(sm) {
+    padding: 32px 24px;
+  }
+}
+
+.title {
+  margin: 0 0 20px;
+  max-width: 560px;
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+
+.lead {
+  margin: 0 0 32px;
+  max-width: 440px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.65;
+  color: rgb(255 255 255 / 0.55);
+}
+
+// ─── Button override ──────────────────────────────────────────────────────────
+
+.btn {
+  background: #ffffff !important;
+  color: #000000 !important;
+  box-shadow:
+    0 0 20px rgba(255, 255, 255, 0.35),
+    0 0 48px rgba(255, 255, 255, 0.12) !important;
+
+  @include hover {
+    background: #f0f0f0 !important;
+  }
+}
+
+// ─── Tags ─────────────────────────────────────────────────────────────────────
+
+.tagsRow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  pointer-events: none;
+
+  @include respond-to(sm) {
+    display: none;
+  }
+}
+
+.tagsCluster {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  height: 100px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &:first-child {
+    align-items: flex-start;
+  }
+
+  &:last-child {
+    align-items: flex-end;
+    width: 260px;
+  }
+}
+
+.tag {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: nowrap;
+  color: #fff;
+  pointer-events: auto;
+}
+
+.tagDark {
+  background: rgb(255 255 255 / 0.1);
+  border: 1px solid rgb(255 255 255 / 0.12);
+  backdrop-filter: blur(8px);
+}
+
+.tagAccent {
+  background: #2563eb;
+  border: 1px solid rgb(255 255 255 / 0.14);
+  box-shadow:
+    0 0 0 1px rgb(255 255 255 / 0.06) inset,
+    0 0 32px rgb(37 99 235 / 0.55),
+    0 0 64px rgb(37 99 235 / 0.25),
+    0 8px 24px rgb(0 0 0 / 0.35);
+}
+
+// ─── Left cluster ─────────────────────────────────────────────────────────────
+
+.tagTiltLeft {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  transform: rotate(-14deg);
+  transform-origin: bottom left;
+  z-index: 2;
+}
+
+.tagFlatLeft {
+  position: absolute;
+  bottom: 0;
+  left: 100px;
+  z-index: 1;
+}
+
+// ─── Right cluster ────────────────────────────────────────────────────────────
+
+.tagTiltRightHigh {
+  position: absolute;
+  bottom: 41px;
+  right: 150px;
+  transform: rotate(-18deg);
+  transform-origin: bottom right;
+  z-index: 3;
+}
+
+.tagTiltRight {
+  position: absolute;
+  bottom: 16px;
+  right: -6px;
+  transform: rotate(15deg);
+  transform-origin: bottom right;
+  z-index: 2;
+
+  @include respond-to(sm) {
+    right: 8px;
+  }
+}
+
+.tagFlatRight {
+  position: absolute;
+  bottom: 0;
+  right: 48px;
+  z-index: 1;
+}

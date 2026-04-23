@@ -1,0 +1,125 @@
+@use "../../../styles/variables" as *;
+@use "../../../styles/mixins" as *;
+
+
+// ─── Header ───────────────────────────────────────────────────────────────────
+
+.header {
+  @include flex-between;
+  align-items: flex-end;
+  margin-bottom: 40px;
+
+  @include respond-to(sm) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+}
+
+.headerLeft {
+  @include flex-column;
+  gap: 16px;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  height: 28px;
+  padding: 0 12px;
+  font-size: 13px;
+  font-weight: $font-weight-medium;
+  color: $color-text-primary-light;
+  background: #f0f0f0;
+  border-radius: $radius-sm;
+  width: fit-content;
+}
+
+.heading {
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: $font-weight-semi;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: $color-text-primary-light;
+
+  em {
+    font-style: italic;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: $font-weight-normal;
+  }
+}
+
+// ─── Grid ─────────────────────────────────────────────────────────────────────
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+
+  @include respond-to(sm) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// ─── Card ─────────────────────────────────────────────────────────────────────
+
+.card {
+  position: relative;
+  background: #e8e8e8;
+  border-radius: $radius-lg;
+  height: 420px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  cursor: pointer;
+  transition: opacity $transition-base;
+
+  @include hover {
+    opacity: 0.9;
+  }
+
+  @include respond-to(md) {
+    height: 320px;
+  }
+
+  @include respond-to(sm) {
+    height: 260px;
+  }
+}
+
+.cardTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.duration {
+  font-size: 13px;
+  font-weight: $font-weight-medium;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.tags {
+  display: inline-flex;
+  align-items: center;
+  height: 30px;
+  padding: 0 12px;
+  font-size: 13px;
+  font-weight: $font-weight-medium;
+  color: $color-text-primary-light;
+  background: rgba(255, 255, 255, 0.88);
+  border-radius: $radius-sm;
+  backdrop-filter: blur(4px);
+  white-space: nowrap;
+}
+
+.cardTitle {
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: $font-weight-semi;
+  color: $color-white;
+  letter-spacing: -0.02em;
+  text-align: right;
+  align-self: flex-end;
+}

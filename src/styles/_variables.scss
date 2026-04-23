@@ -1,0 +1,86 @@
+// ─── Colors ───────────────────────────────────────────────────────────────────
+
+$color-white:       #ffffff;
+$color-black:       #0a0a0a;
+$color-near-white:  #fafafa;
+$color-near-black:  #000000;
+
+// Light theme
+$color-bg-light:              #fafafa;
+$color-surface-light:         #ffffff;
+$color-text-primary-light:    #000000;
+$color-text-secondary-light:  #666666;
+$color-btn-primary-hover-light:   #383838;
+$color-btn-secondary-hover-light: #f2f2f2;
+$color-btn-secondary-border-light: #ebebeb;
+$color-foreground-light:      #ffffff;
+
+// Dark theme
+$color-bg-dark:               #000000;
+$color-surface-dark:          #000000;
+$color-text-primary-dark:     #ededed;
+$color-text-secondary-dark:   #999999;
+$color-btn-primary-hover-dark:    #cccccc;
+$color-btn-secondary-hover-dark:  #1a1a1a;
+$color-btn-secondary-border-dark: #1a1a1a;
+$color-foreground-dark:       #000000;
+
+// ─── Typography ───────────────────────────────────────────────────────────────
+
+$font-sans:   var(--font-inter), Inter, Arial, Helvetica, sans-serif;
+$font-mono:   ui-monospace, monospace;
+
+$font-size-sm:  14px;
+$font-size-md:  18px;
+$font-size-lg:  32px;
+$font-size-xl:  40px;
+$font-size-2xl: 48px;
+
+$line-height-tight:  40px;
+$line-height-normal: 48px;
+$line-height-loose:  32px;
+
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semi:   600;
+
+// ─── Spacing ──────────────────────────────────────────────────────────────────
+
+$space-1:  4px;
+$space-2:  8px;
+$space-3:  12px;
+$space-4:  16px;
+$space-5:  20px;
+$space-6:  24px;
+$space-8:  32px;
+$space-10: 40px;
+$space-12: 48px;
+$space-15: 60px;
+$space-30: 120px;
+
+// ─── Breakpoints ──────────────────────────────────────────────────────────────
+
+$breakpoint-xs: 375px;
+$breakpoint-sm: 600px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+
+// ─── Layout ───────────────────────────────────────────────────────────────────
+
+$max-width-content: 800px;
+$max-width-text:    440px;
+$max-width-heading: 320px;
+
+// ─── Borders & Radius ─────────────────────────────────────────────────────────
+
+$radius-full:   128px;
+$radius-sm:     4px;
+$radius-md:     8px;
+$radius-lg:     16px;
+
+// ─── Transitions ──────────────────────────────────────────────────────────────
+
+$transition-fast:   0.15s ease;
+$transition-base:   0.2s ease;
+$transition-slow:   0.3s ease;

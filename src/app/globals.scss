@@ -1,0 +1,46 @@
+@use "../styles/variables" as *;
+@use "../styles/mixins" as *;
+@use "../styles/reset";
+@use "../styles/typography";
+
+// ─── CSS Custom Properties (runtime theme) ────────────────────────────────────
+
+:root {
+  --background: #ffffff;
+}
+
+// ─── Base ─────────────────────────────────────────────────────────────────────
+
+html,
+body {
+  height: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+  @include flex-column;
+  background: var(--background);
+  font-family: $font-sans;
+  @include font-smooth;
+}
+
+main {
+  flex: 1;
+}
+
+// ─── Container ────────────────────────────────────────────────────────────────
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+.layout {
+  @include flex-column;
+  flex: 1;
+  position: relative;
+}
