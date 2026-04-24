@@ -1,5 +1,7 @@
 import Button from "@/shared/ui/Button";
 import SectionTag from "@/shared/ui/SectionTag";
+import AnimatedHeading from "@/shared/ui/AnimatedHeading";
+import AnimatedGrid from "./AnimatedGrid";
 import styles from "./Work.module.scss";
 
 const CASES = [
@@ -15,18 +17,18 @@ export default function Work() {
       <div className={styles.header}>
         <div className={styles.headerLeft}>
           <SectionTag>Work</SectionTag>
-          <h2 className={styles.heading}>
+          <AnimatedHeading className={styles.heading}>
             Highlights from our
             <br />
             most recent <em>work.</em>
-          </h2>
+          </AnimatedHeading>
         </div>
         <Button href="#work" size="md">
           View all
         </Button>
       </div>
 
-      <div className={styles.grid}>
+      <AnimatedGrid className={styles.grid}>
         {CASES.map(({ title, duration, tags }) => (
           <article key={title} className={styles.card}>
             <div className={styles.cardTop}>
@@ -36,7 +38,7 @@ export default function Work() {
             <h3 className={styles.cardTitle}>{title}</h3>
           </article>
         ))}
-      </div>
+      </AnimatedGrid>
     </section>
   );
 }

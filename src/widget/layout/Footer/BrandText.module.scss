@@ -1,0 +1,25 @@
+.brand {
+  font-size: clamp(48px, calc(32.2vw - 15px), 370px);
+  text-align: center;
+  font-weight: 500;
+  color: #0a0a0a;
+  line-height: 0.85;
+  letter-spacing: -0.02em;
+  margin-left: -6px;
+  user-select: none;
+}
+
+.letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.visible .letter {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: calc(var(--i) * 80ms);
+}

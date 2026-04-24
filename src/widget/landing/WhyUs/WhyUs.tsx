@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Syne, DM_Sans } from "next/font/google";
 import Button from "@/shared/ui/Button";
 import SectionTag from "@/shared/ui/SectionTag";
+import AnimatedHeading from "@/shared/ui/AnimatedHeading";
 import {
   SiNextdotjs,
   SiReact,
@@ -38,11 +39,11 @@ export default function WhyUs() {
     <section className={styles.section}>
       <div className={styles.header}>
         <SectionTag>Why Brands Trust Us</SectionTag>
-        <h2 className={`${styles.heading} ${syne.className}`}>
+        <AnimatedHeading className={`${styles.heading} ${syne.className}`}>
           How we deliver better
           <br />
-          work that lasts
-        </h2>
+          work that <em>lasts</em>
+        </AnimatedHeading>
       </div>
 
       <div className={styles.grid}>

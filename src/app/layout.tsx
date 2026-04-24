@@ -3,6 +3,7 @@ import { Syne } from "next/font/google";
 import "./globals.scss";
 import Footer from "@/widget/layout/Footer/Footer";
 import Header from "@/widget/layout/Header/Header";
+import ContactModal from "@/shared/ui/ContactModal";
 
 const syne = Syne({
   subsets: ["latin"],
@@ -27,6 +28,7 @@ export default function RootLayout({
           <main className="container">{children}</main>
           <Footer />
         </div>
+        <ContactModal />
       </body>
     </html>
   );

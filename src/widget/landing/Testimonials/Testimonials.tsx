@@ -1,5 +1,7 @@
 import Button from "@/shared/ui/Button";
 import SectionTag from "@/shared/ui/SectionTag";
+import AnimatedHeading from "@/shared/ui/AnimatedHeading";
+import AnimatedCards from "./AnimatedCards";
 import { DM_Sans } from "next/font/google";
 import { FaXTwitter } from "react-icons/fa6";
 import styles from "./Testimonials.module.scss";
@@ -54,18 +56,18 @@ export default function Testimonials() {
       <div className={styles.header}>
         <div className={styles.headerLeft}>
           <SectionTag>Testimonials</SectionTag>
-          <h2 className={styles.heading}>
+          <AnimatedHeading className={styles.heading}>
             Chosen by 50+ growing
             <br />
             <em>brands worldwide.</em>
-          </h2>
+          </AnimatedHeading>
         </div>
         <Button href="#contact" size="md">
           Work With Us
         </Button>
       </div>
 
-      <div className={styles.cards}>
+      <AnimatedCards className={styles.cards}>
         {REVIEWS.map((r) => (
           <div key={r.name} className={styles.card}>
             <div className={styles.cardInner}>
@@ -101,7 +103,7 @@ export default function Testimonials() {
             </div>
           </div>
         ))}
-      </div>
+      </AnimatedCards>
     </section>
   );
 }

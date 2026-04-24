@@ -61,6 +61,12 @@
   line-height: 1.04;
   letter-spacing: -0.03em;
   color: $color-text-primary-light;
+
+  em {
+    font-style: italic;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: $font-weight-normal;
+  }
 }
 
 .description {

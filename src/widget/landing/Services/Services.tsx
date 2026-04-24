@@ -1,5 +1,6 @@
 import { DM_Sans } from "next/font/google";
 import SectionTag from "@/shared/ui/SectionTag";
+import AnimatedHeading from "@/shared/ui/AnimatedHeading";
 import {
   TbCircleHalf,
   TbCircles,
@@ -50,11 +51,11 @@ export default function Services() {
     <section className={styles.section}>
       <div className={styles.header}>
         <SectionTag>What we do</SectionTag>
-        <h2 className={styles.heading}>
+        <AnimatedHeading className={styles.heading}>
           The way we
           <br />
           bring ideas to <em>life.</em>
-        </h2>
+        </AnimatedHeading>
         <p className={`${styles.sub} ${dmSans.className}`}>
           These are the principles that guide our
           <br />

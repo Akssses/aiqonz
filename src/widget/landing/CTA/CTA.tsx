@@ -1,4 +1,5 @@
-import Button from "@/shared/ui/Button";
+import CTAButton from "@/shared/ui/CTAButton";
+import AnimatedHeading from "@/shared/ui/AnimatedHeading";
 import styles from "./CTA.module.scss";
 
 export default function CTA() {
@@ -8,25 +9,24 @@ export default function CTA() {
         <div className={styles.glow} aria-hidden />
 
         <div className={styles.content}>
-          <h2 className={styles.title}>
+          <AnimatedHeading className={styles.title}>
             Ready to see your
             <br />
-            brand elevated?
-          </h2>
+            brand <em>elevated?</em>
+          </AnimatedHeading>
 
           <p className={styles.lead}>
             We&apos;ll build a free concept for your website — no calls, no
             commitments. Just see what your brand could look like.
           </p>
 
-          <Button
-            href="#contact"
+          <CTAButton
             variant="primary"
             size="lg"
             className={styles.btn}
           >
-            Get your free concept
-          </Button>
+            Start a project
+          </CTAButton>
 
           <div className={styles.tagsRow}>
             <ul className={styles.tagsCluster}>

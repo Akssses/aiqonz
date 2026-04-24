@@ -1,6 +1,7 @@
 import { FaXTwitter, FaYoutube, FaInstagram } from "react-icons/fa6";
 import styles from "./Footer.module.scss";
 import NewsletterForm from "./NewsletterForm";
+import BrandText from "./BrandText";
 
 const AGENCY_LINKS = [
   { label: "Home", href: "#" },
@@ -10,8 +11,8 @@ const AGENCY_LINKS = [
 ];
 
 const INFO_LINKS = [
-  { label: "Privacy policy", href: "#" },
-  { label: "Terms", href: "#" },
+  { label: "Privacy policy", href: "/privacy" },
+  { label: "Terms", href: "/terms" },
 ];
 
 export default function Footer() {
@@ -73,7 +74,7 @@ export default function Footer() {
         <p className={styles.copy}>Copyright © Design by @aqbaarrz</p>
       </div>
 
-      <div className={styles.brand}>aiqonz</div>
+      <BrandText />
     </footer>
   );
 }

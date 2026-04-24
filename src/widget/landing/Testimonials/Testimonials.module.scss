@@ -70,6 +70,23 @@ $accent: #534ab7;
   }
 }
 
+.cardsReady .card {
+  opacity: 0;
+  transform: translateY(28px);
+}
+
+.cardsVisible .card {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 0.9s ease,
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+
+  &:nth-child(1) { transition-delay: 0ms; }
+  &:nth-child(2) { transition-delay: 200ms; }
+  &:nth-child(3) { transition-delay: 400ms; }
+}
+
 // ─── Base card ────────────────────────────────────────────────────────────────
 
 .card {

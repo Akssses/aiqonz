@@ -1,7 +1,9 @@
+import Image from "next/image";
 import { FiCheck } from "react-icons/fi";
 import { Syne } from "next/font/google";
-import Button from "@/shared/ui/Button";
+import CTAButton from "@/shared/ui/CTAButton";
 import SectionTag from "@/shared/ui/SectionTag";
+import AnimatedHeading from "@/shared/ui/AnimatedHeading";
 import styles from "./Pricing.module.scss";
 
 const syne = Syne({ subsets: ["latin"], weight: ["600", "700", "800"] });
@@ -20,9 +22,9 @@ export default function Pricing() {
     <section className={styles.section}>
       <div className={styles.header}>
         <SectionTag>Pricing</SectionTag>
-        <h2 className={`${styles.heading} ${syne.className}`}>
-          One price. Everything included.
-        </h2>
+        <AnimatedHeading className={`${styles.heading} ${syne.className}`}>
+          One price. Everything <em>included.</em>
+        </AnimatedHeading>
       </div>
 
       <div className={styles.top}>
@@ -33,6 +35,23 @@ export default function Pricing() {
               <br />
               Delivered in 7 days.
             </p>
+
+            <div className={styles.founderRow}>
+              <Image
+                src="/assets/images/akbar.png"
+                alt="Founder"
+                width={100}
+                height={100}
+                className={styles.founderAvatar}
+              />
+              <div className={styles.founderInfo}>
+                <span className={styles.founderName}>Akbar K.</span>
+                <span className={styles.founderRole}>Founder of Aiqonz</span>
+                <p className={styles.founderNote}>
+                  I personally oversee every project.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -61,9 +80,9 @@ export default function Pricing() {
           </ul>
 
           <div className={styles.planActions}>
-            <Button href="#contact" size="md">
-              Get your free concept
-            </Button>
+            <CTAButton size="md">
+              Start a project
+            </CTAButton>
           </div>
         </div>
       </div>

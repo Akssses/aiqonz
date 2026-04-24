@@ -43,6 +43,12 @@ $border-light: rgba(0, 0, 0, 0.07);
   line-height: 1.05;
   letter-spacing: -0.03em;
   color: #000000;
+
+  em {
+    font-style: italic;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+  }
 }
 
 // ─── Grid ─────────────────────────────────────────────────────────────────────
@@ -414,13 +420,19 @@ $border-light: rgba(0, 0, 0, 0.07);
   }
 }
 
+@keyframes float {
+  0%   { transform: rotate(10deg) translateY(0px); }
+  50%  { transform: rotate(10deg) translateY(-16px); }
+  100% { transform: rotate(10deg) translateY(0px); }
+}
+
 .strategicImg {
   position: absolute;
   bottom: -40px;
   right: -100px;
-  transform: rotate(10deg);
   width: 90%;
   height: auto;
+  animation: float 5s ease-in-out infinite;
   object-fit: contain;
   pointer-events: none;
 }

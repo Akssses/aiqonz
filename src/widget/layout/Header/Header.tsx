@@ -1,4 +1,4 @@
-import Button from "@/shared/ui/Button";
+import CTAButton from "@/shared/ui/CTAButton";
 import styles from "./Header.module.scss";
 
 export default function Header() {
@@ -8,9 +8,9 @@ export default function Header() {
         aiqonz
       </a>
 
-      <Button href="#contact" size="md">
+      <CTAButton size="md">
         Let&apos;s talk
-      </Button>
+      </CTAButton>
     </header>
   );
 }

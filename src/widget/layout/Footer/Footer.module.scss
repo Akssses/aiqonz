@@ -163,15 +163,3 @@
   color: $color-text-secondary-light;
 }
 
-// ─── Brand ────────────────────────────────────────────────────────────────────
-
-.brand {
-  font-size: clamp(48px, calc(32.2vw - 15px), 370px);
-  text-align: center;
-  font-weight: 500;
-  color: $color-near-black;
-  line-height: 0.85;
-  letter-spacing: -0.02em;
-  margin-left: -6px;
-  user-select: none;
-}
