@@ -37,7 +37,7 @@ const jsonLd = {
       "@type": "WebPage",
       "@id": "https://aiqonz.com/#webpage",
       url: "https://aiqonz.com",
-      name: "Aiqonz Studio — Premium Websites for Luxury Brands",
+      name: "Aiqonz Studio — Premium Websites",
       description:
         "We build premium, custom websites for luxury brands — delivered in 7 days.",
       isPartOf: { "@id": "https://aiqonz.com/#website" },
