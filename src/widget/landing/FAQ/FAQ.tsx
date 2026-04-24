@@ -35,7 +35,7 @@ const FAQS = [
   {
     question: "How do I get started?",
     answer:
-      'Click "Get your free concept" — we\'ll build a custom design concept for your brand within 24 hours, no commitment required. You see it first, then decide.',
+      "Click Start a project and tell us about your brand. We'll get back to you within a few hours.",
   },
 ];
 

@@ -4,10 +4,9 @@ import NewsletterForm from "./NewsletterForm";
 import BrandText from "./BrandText";
 
 const AGENCY_LINKS = [
-  { label: "Home", href: "#" },
-  { label: "Work", href: "#" },
-  { label: "Blog", href: "#" },
-  { label: "Contact", href: "#" },
+  { label: "Home", href: "/" },
+  { label: "Work", href: "/work" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const INFO_LINKS = [
@@ -26,7 +25,7 @@ export default function Footer() {
           <p className={styles.description}>
             Get the latest in tech and design straight to your inbox.
           </p>
-          <NewsletterForm />
+          {/* <NewsletterForm /> */}
           <div className={styles.socials}>
             <a href="#" className={styles.socialIcon} aria-label="X (Twitter)">
               <FaXTwitter />
@@ -71,7 +70,7 @@ export default function Footer() {
       <div className={styles.divider} />
 
       <div className={styles.bottom}>
-        <p className={styles.copy}>Copyright © Design by @aqbaarrz</p>
+        <p className={styles.copy}>© 2026 Aiqonz. All rights reserved.</p>
       </div>
 
       <BrandText />

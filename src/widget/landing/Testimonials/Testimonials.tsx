@@ -57,9 +57,7 @@ export default function Testimonials() {
         <div className={styles.headerLeft}>
           <SectionTag>Testimonials</SectionTag>
           <AnimatedHeading className={styles.heading}>
-            Chosen by 50+ growing
-            <br />
-            <em>brands worldwide.</em>
+            What our <em>clients</em> say
           </AnimatedHeading>
         </div>
         <Button href="#contact" size="md">

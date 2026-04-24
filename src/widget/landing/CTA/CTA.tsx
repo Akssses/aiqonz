@@ -16,15 +16,11 @@ export default function CTA() {
           </AnimatedHeading>
 
           <p className={styles.lead}>
-            We&apos;ll build a free concept for your website — no calls, no
-            commitments. Just see what your brand could look like.
+            Tell us about your brand and goals. We'll get back to you within a
+            few hours — no calls, just real conversation.
           </p>
 
-          <CTAButton
-            variant="primary"
-            size="lg"
-            className={styles.btn}
-          >
+          <CTAButton variant="primary" size="lg" className={styles.btn}>
             Start a project
           </CTAButton>
 

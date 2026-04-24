@@ -2,7 +2,11 @@ import type { Metadata } from "next";
 import styles from "../legal.module.scss";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Aiqonz",
+  title: "Privacy Policy",
+  description:
+    "Learn how Aiqonz Studio collects, uses, and protects your personal information.",
+  alternates: { canonical: "https://aiqonz.com/privacy" },
+  robots: { index: false, follow: false },
 };
 
 export default function PrivacyPage() {

@@ -8,9 +8,7 @@ export default function Header() {
         aiqonz
       </a>
 
-      <CTAButton size="md">
-        Let&apos;s talk
-      </CTAButton>
+      <CTAButton size="md">Start a project</CTAButton>
     </header>
   );
 }

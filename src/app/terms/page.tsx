@@ -2,7 +2,11 @@ import type { Metadata } from "next";
 import styles from "../legal.module.scss";
 
 export const metadata: Metadata = {
-  title: "Terms of Service — Aiqonz",
+  title: "Terms of Service",
+  description:
+    "Read the terms and conditions governing use of Aiqonz Studio's web design services.",
+  alternates: { canonical: "https://aiqonz.com/terms" },
+  robots: { index: false, follow: false },
 };
 
 export default function TermsPage() {

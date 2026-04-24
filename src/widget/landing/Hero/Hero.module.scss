@@ -7,7 +7,7 @@
   gap: 48px;
   position: relative;
   z-index: 1;
-  padding-top: 100px;
+  padding-top: 50px;
 
   @include respond-to(md) {
     padding-top: 64px;
