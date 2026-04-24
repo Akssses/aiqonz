@@ -16,6 +16,11 @@ export default function Hero() {
   return (
     <section className={styles.hero}>
       <div className={styles.center}>
+        <img
+          className={styles.logo}
+          src="/assets/images/logo.png"
+          alt="Aiqonz Studio"
+        />
         <AnimatedHeading as="h1" className={styles.heading}>
           Your business is <em>luxury.</em>
           <br />
