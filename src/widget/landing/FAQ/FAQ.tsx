@@ -8,34 +8,34 @@ import styles from "./FAQ.module.scss";
 
 const FAQS = [
   {
-    question: "What exactly do I get for $3,000?",
+    question: "What's included in the $3,000 package?",
     answer:
-      "A fully custom website — strategy, design, development, and launch. No templates, no shortcuts. Built specifically for your brand and your clients. You own everything after delivery.",
+      "A fully custom website + admin panel where you can add, edit, and remove cars from your fleet yourself. Custom design, booking form, mobile optimized. Ready in 7 days. You own everything.",
   },
   {
-    question: "How is 7-day delivery actually possible?",
+    question: "Can I manage my fleet without a developer?",
     answer:
-      "We run a focused sprint process. Day 1: brief and strategy. Day 2–3: design concept. Day 4: your feedback. Day 5–6: development and polish. Day 7: live. We work on one project at a time so nothing gets delayed.",
+      "Yes. We build a simple admin panel where you can add new cars, upload photos, set availability and pricing. No technical knowledge needed.",
   },
   {
-    question: "Do you work with businesses outside Malaysia?",
+    question: "How does 7-day delivery work?",
     answer:
-      "Yes. We work with luxury brands across Malaysia, Singapore, and Dubai. All communication is handled remotely via text — no calls required.",
+      "Day 1: brief and your fleet details. Day 2–3: design. Day 4: your feedback. Day 5–6: development and admin panel. Day 7: live. We work on one project at a time so nothing gets delayed.",
   },
   {
-    question: "What industries do you work with?",
+    question: "Do you work outside Malaysia?",
     answer:
-      "Luxury car rentals, yacht charters, private villas, fine dining, premium spas, skydiving, private jets, golf clubs, and high-end hospitality. If your business is premium, we're the right fit.",
+      "Yes. We work with luxury car rental businesses across Malaysia, Singapore, and Dubai. All communication is via text — no calls required.",
   },
   {
-    question: "What if I need changes after the site goes live?",
+    question: "What if your concepts don't match my brand?",
     answer:
-      "Every project includes a 14-day post-launch window for small fixes. After that, we offer revisions at a fixed rate — no surprise invoices.",
+      "We offer a fully custom build from scratch starting at $5,000. Tell us your vision and we'll build it exactly how you want.",
   },
   {
     question: "How do I get started?",
     answer:
-      "Click Start a project and tell us about your brand. We'll get back to you within a few hours.",
+      "Message us directly on WhatsApp or Telegram. We'll get back to you within a few hours.",
   },
 ];
 

@@ -10,14 +10,12 @@ export default function CTA() {
 
         <div className={styles.content}>
           <AnimatedHeading className={styles.title}>
-            Ready to see your
-            <br />
-            brand <em>elevated?</em>
+            Ready to upgrade your car rental <em>website?</em>
           </AnimatedHeading>
 
           <p className={styles.lead}>
-            Tell us about your brand and goals. We'll get back to you within a
-            few hours — no calls, just real conversation.
+            We'll show you what your site could look like — no calls, no
+            commitments.
           </p>
 
           <CTAButton variant="primary" size="lg" className={styles.btn}>

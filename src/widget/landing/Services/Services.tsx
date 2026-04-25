@@ -2,12 +2,12 @@ import { DM_Sans } from "next/font/google";
 import SectionTag from "@/shared/ui/SectionTag";
 import AnimatedHeading from "@/shared/ui/AnimatedHeading";
 import {
-  TbCircleHalf,
-  TbCircles,
-  TbLayoutGridFilled,
-  TbMessages,
-  TbCirclesFilled,
-  TbSparkles,
+  TbPhoto,
+  TbClick,
+  TbLayoutDashboard,
+  TbDeviceMobile,
+  TbDiamond,
+  TbRocket,
 } from "react-icons/tb";
 import styles from "./Services.module.scss";
 
@@ -15,34 +15,34 @@ const dmSans = DM_Sans({ subsets: ["latin"], weight: ["400", "500"] });
 
 const ITEMS = [
   {
-    Icon: TbCircleHalf,
-    title: "Strategy & direction",
-    desc: "Positioning, and clarity baked into every project.",
+    Icon: TbPhoto,
+    title: "Fleet showcase",
+    desc: "Beautiful gallery for your cars.",
   },
   {
-    Icon: TbCircles,
-    title: "Motion & interaction",
-    desc: "Subtle animations that elevate the user experience.",
+    Icon: TbClick,
+    title: "Booking requests",
+    desc: "Clear CTA that converts visitors.",
   },
   {
-    Icon: TbLayoutGridFilled,
-    title: "Interface design",
-    desc: "User-first interfaces that are functional, and intuitive.",
+    Icon: TbLayoutDashboard,
+    title: "Admin panel",
+    desc: "Manage your fleet without a developer.",
   },
   {
-    Icon: TbMessages,
-    title: "Web & product design",
-    desc: "From landing pages to full products built to perform.",
+    Icon: TbDeviceMobile,
+    title: "Mobile optimized",
+    desc: "70% of bookings start on mobile.",
   },
   {
-    Icon: TbCirclesFilled,
-    title: "Brand foundations",
-    desc: "Everything you need to build with consistency.",
+    Icon: TbDiamond,
+    title: "Brand identity",
+    desc: "Site that matches your premium fleet.",
   },
   {
-    Icon: TbSparkles,
-    title: "Launch-ready delivery",
-    desc: "All files, assets, and handoff included. Fully yours.",
+    Icon: TbRocket,
+    title: "7-day delivery",
+    desc: "From brief to live in one week.",
   },
 ];
 

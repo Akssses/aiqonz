@@ -9,7 +9,6 @@ const STATS = [
   { label: "Delivery time", value: "7 Days" },
   { label: "Starting price", value: "$3,000" },
   { label: "Custom design", value: "100%" },
-  { label: "Luxury niches", value: "10+" },
 ];
 
 export default function Hero() {
@@ -22,15 +21,13 @@ export default function Hero() {
           alt="Aiqonz Studio"
         />
         <AnimatedHeading as="h1" className={styles.heading}>
-          Your business is <em>luxury.</em>
+          Premium websites for <br /> car rental <em>businesses.</em>
           <br />
-          Your website should be too.
         </AnimatedHeading>
 
         <p className={styles.description}>
-          We build premium websites for luxury brands.
-          <br />
-          Delivered in 7 days.
+          Custom websites for car rental companies. Manage your fleet, take
+          bookings, look premium. Ready in 7 days.
         </p>
 
         <div className={styles.ctas}>
@@ -38,7 +35,7 @@ export default function Hero() {
             Start a project
           </CTAButton>
           <Button href="#work" variant="primary" size="lg">
-            See our work
+            See concepts
           </Button>
         </div>
       </div>

@@ -8,7 +8,6 @@ const CASES = [
   { title: "Flow state", duration: "10 Weeks", tags: "Framer, Figma" },
   { title: "Swift track", duration: "12 Weeks", tags: "Figma, Notion" },
   { title: "Design base", duration: "14 Weeks", tags: "Spline, Canva" },
-  { title: "Archi flow", duration: "16 Weeks", tags: "Framer, Spline" },
 ];
 
 export default function Work() {
@@ -18,9 +17,7 @@ export default function Work() {
         <div className={styles.headerLeft}>
           <SectionTag>Work</SectionTag>
           <AnimatedHeading className={styles.heading}>
-            Highlights from our
-            <br />
-            most recent <em>work.</em>
+            Car rental concepts we've <em>built.</em>
           </AnimatedHeading>
         </div>
         <Button href="#work" size="md">

@@ -9,12 +9,12 @@ import styles from "./Pricing.module.scss";
 const syne = Syne({ subsets: ["latin"], weight: ["600", "700", "800"] });
 
 const MONTHLY_FEATURES = [
-  "Custom design — no templates",
-  "7-day delivery",
+  "Custom design",
+  "Fleet admin panel",
+  "Booking form",
   "Mobile optimized",
+  "7-day delivery",
   "Full ownership",
-  "2 revision rounds",
-  "Handed over ready to launch",
 ];
 
 export default function Pricing() {
@@ -31,9 +31,8 @@ export default function Pricing() {
         <div className={styles.leftCol}>
           <div className={styles.promoCard}>
             <p className={styles.promoText}>
-              Premium websites for luxury brands.
-              <br />
-              Delivered in 7 days.
+              Premium websites for luxury car rental businesses. With fleet
+              admin panel.
             </p>
 
             <div className={styles.founderRow}>
@@ -80,9 +79,7 @@ export default function Pricing() {
           </ul>
 
           <div className={styles.planActions}>
-            <CTAButton size="md">
-              Start a project
-            </CTAButton>
+            <CTAButton size="md">Start a project</CTAButton>
           </div>
         </div>
       </div>

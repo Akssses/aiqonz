@@ -133,9 +133,9 @@ export default function Home() {
       />
       <div className={styles.sections}>
         <Hero />
+        <Work />
         <WhyUs />
         <Services />
-        <Work />
         <Testimonials />
         <Pricing />
         <FAQ />

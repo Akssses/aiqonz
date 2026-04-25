@@ -117,8 +117,8 @@ export default function WhyUs() {
             &ldquo;
           </span>
           <p className={`${styles.quoteText} ${syne.className}`}>
-            Most luxury brands lose clients before they even say hello — because
-            of their website.
+            Most car rental businesses lose bookings every day — because their
+            website doesn't look as premium as their fleet.
           </p>
         </div>
 
